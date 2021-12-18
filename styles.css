@@ -1,0 +1,97 @@
+* {
+  background-color: rgb(17, 22, 22);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: -10px;
+  color: blanchedalmond;
+}
+
+.game {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ui-level {
+  font-size: 4rem;
+  padding-top: 2rem;
+}
+
+.ui-message {
+  font-size: 2rem;
+}
+
+.level-two {
+  display: none;
+}
+
+/* .next-button-lvl2 {
+  padding: 1rem 3rem;
+  background-color: aqua;
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+} */
+
+.level-three {
+  display: none;
+}
+
+/* .next-button-lvl3 {
+  padding: 1rem 3rem;
+  background-color: aqua;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+} */
+
+.scary-pic {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 0px;
+}
+
+.masterDiv {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.theMaze {
+  font-size: 100px;
+}
+
+.desc {
+  font-size: 30px;
+}
+
+.playBtn {
+  height: 100px;
+  width: 300px;
+  margin-top: 400px;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  font-size: 50px;
+  border: none;
+  border-radius: 5px;
+}
