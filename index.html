@@ -5,19 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+
     <title>The Maze</title>
   </head>
   <body>
     <div class="masterDiv">
       <h1 class="theMaze">The Maze</h1>
       <br />
-      <p class="desc">test your skills!</p>
+      <p class="desc">test your nerves!</p>
       <br />
+      <h4>complete the maze just under a minute</h4>
+      <br />
+
       <button class="playBtn" onclick="Start()">Play</button>
     </div>
     <div class="description" style="display: none">
       <h2 class="ui-level">level 1</h2>
       <p class="ui-message">get to the finish line</p>
+      <br />
+      <span style="display: none" class="timer">1 minute</span>
+      <br />
     </div>
 
     <div class="game" style="display: none">
@@ -47,6 +54,7 @@
           />
         </mask>
         <path
+          class="inside"
           fill-rule="evenodd"
           clip-rule="evenodd"
           d="M241 14H40V606H351V84H682V14H351H241Z"
@@ -177,13 +185,18 @@
       </svg>
     </div>
 
-    <audio src="audio/Scary Maze Game Scream (2).mp3" class="goodEnd"></audio>
+    <audio
+      src="audio/Scary Maze Game Scream (2).mp3"
+      class="screamSound"
+    ></audio>
+
     <img
       src="images/scary.jpg"
       class="scary-pic"
       alt="img"
       style="display: none"
     />
+    <audio src="audio/Darude - Sandstorm.mp3" class="darudeSandstorm"></audio>
     <script src="script.js"></script>
   </body>
 </html>

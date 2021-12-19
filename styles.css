@@ -6,7 +6,10 @@
   margin-top: -10px;
   color: blanchedalmond;
 }
-
+body {
+  cursor: none;
+  cursor: url("images/icons8-scary-tree-24.png"), auto;
+}
 .game {
   min-height: 80vh;
   display: flex;
@@ -94,4 +97,57 @@
   font-size: 50px;
   border: none;
   border-radius: 5px;
+}
+
+.maze-border {
+  vertical-align: middle;
+  transition: -webkit-filter 0.25s linear 99999s, filter 0.25s linear 99999s;
+}
+.maze-border:hover {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  transition-delay: 0s;
+}
+.game::after {
+  animation: colours 5s linear infinite;
+  bottom: 0;
+  content: "";
+  left: 0;
+  mix-blend-mode: overlay;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity 0.25s linear 99999s;
+}
+.game:hover::after {
+  opacity: 0.75;
+  transition-delay: 0s;
+}
+.game.paused::after {
+  animation-play-state: paused;
+}
+@keyframes colours {
+  0% {
+    background: #f00;
+  }
+  16.667% {
+    background: #ff0;
+  }
+  33.333% {
+    background: #0f0;
+  }
+  50% {
+    background: #0ff;
+  }
+  66.667% {
+    background: #00f;
+  }
+  83.333% {
+    background: #f0f;
+  }
+  100% {
+    background: #f00;
+  }
 }
