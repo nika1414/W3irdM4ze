@@ -26,6 +26,8 @@ function Start() {
   darudeSandstorm.play();
   timer.style.display = "block";
   startTimer();
+  uiLevel.textContent = "LEVEL 1";
+  uiMessage.textContent = "GET TO THE FINISH LINE";
 }
 
 //timer
