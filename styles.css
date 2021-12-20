@@ -6,11 +6,10 @@
   margin-top: -10px;
   color: blanchedalmond;
   font-family: "Ruslan Display", cursive;
-}
-body {
-  cursor: none;
+
   cursor: url("images/icons8-scary-tree-24.png"), auto;
 }
+
 .game {
   min-height: 80vh;
   display: flex;
