@@ -6,7 +6,6 @@
   margin-top: -10px;
   color: blanchedalmond;
   font-family: "Ruslan Display", cursive;
-
   cursor: url("images/icons8-scary-tree-24.png"), auto;
 }
 
@@ -63,6 +62,16 @@
 } */
 
 .scary-pic {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 0px;
+}
+
+.scary-pic_2 {
   position: fixed;
   top: 0;
   left: 0;

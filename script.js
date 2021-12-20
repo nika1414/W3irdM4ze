@@ -14,6 +14,7 @@ const uiMessage = document.querySelector(".ui-message");
 
 //end game
 const scaryPic = document.querySelector(".scary-pic");
+const scaryPicTwo = document.querySelector(".scary-pic_2");
 const screamSound = document.querySelector(".screamSound");
 
 //start game
@@ -40,11 +41,15 @@ function startTimer() {
     }
     if (counter === 0) {
       // alert("Sorry, Out of Time");
-      masterDiv.style.display = "flex";
+      // masterDiv.style.display = "flex";
+      // darudeSandstorm.pause();
+      // levelOne.style.display = "flex";
+      // levelTwo.style.display = "none";
+      // levelThree.style.display = "none";
       darudeSandstorm.pause();
-      levelOne.style.display = "flex";
-      levelTwo.style.display = "none";
-      levelThree.style.display = "none";
+      screamSound.play();
+      scaryPicTwo.style.display = "block";
+      document.body.style.background = "black";
       clearInterval(counter);
     }
   }, 1000);
