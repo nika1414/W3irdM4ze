@@ -84,3 +84,12 @@ window.addEventListener("mousemove", (e) => {
   let check = e.target.classList.value;
   shejaxeba(check);
 });
+
+//disable right click
+document.addEventListener(
+  "contextmenu",
+  function (e) {
+    e.preventDefault();
+  },
+  false
+);
